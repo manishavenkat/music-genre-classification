@@ -14,7 +14,7 @@ This model takes raw waveforms as inputs, preprocesses the audio and classifies 
 In music_trainvaltest.py, we have 64 inputs per genre in training (640 datapoints for training and 160 datapoints for validation, from 10 genres). The model is tested on 200 inputs from the same genres. Here is the loss plot, confusion matrix and T-SNE for the testing data:
 
 Loss
-![Example](https://github.com/manishavenkat/music-genre-classification/blob/main/loss_plot_trainvaltest.png
+![Example](https://github.com/manishavenkat/music-genre-classification/blob/main/loss_plot_music_trainvaltest.png
 )
 The model includes early stopping. Despite this, one reason for increasing validation loss (despite decreasing training loss) could be the small size of the training set (640 training datapoints) for the parameters of this neural network. Fashion MNIST, for example, which is often used with CNNs has 60K inputs for training, incomparison. 
 
@@ -22,6 +22,7 @@ Confusion Matrix
 ![Example](https://github.com/manishavenkat/music-genre-classification/blob/main/confusion_matrix_music_trainvaltest.png
 )
 The model is very good at recognizing metal, classical and pop but terrible at recognizing country. 
+
 Testing Data Results Visualisation
 ![Example](https://github.com/manishavenkat/music-genre-classification/blob/main/tsne_plot_music_trainvaltest.png
 )
